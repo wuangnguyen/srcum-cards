@@ -1,0 +1,9 @@
+Let's re-create the local.settings.json with strcture as below:
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "Secret endpoint URL here",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "scrumcards_DOCUMENT_DB": "Secret endpoint URL here"
+  }
+}
