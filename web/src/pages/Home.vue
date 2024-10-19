@@ -20,7 +20,7 @@
 
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
-import 'swiper/swiper-bundle.css';
+import 'swiper/css';
 import axios from 'axios';
 import { API_URL } from '@/const';
 import Loading from 'vue-loading-overlay';
@@ -63,7 +63,7 @@ export default {
       vm.isLoading = true;
       vm.selectedValue = vm.cardValue[vm.swiper.realIndex];
       let url = `${API_URL}/item`;
-      axios.post(url, { value: `${vm.selectedValue}` }).then(function () {
+      axios.post(url, { id: `${this.randomId}`, value: `${vm.selectedValue}` }).then(function () {
         vm.isLoading = false;
       });
     },

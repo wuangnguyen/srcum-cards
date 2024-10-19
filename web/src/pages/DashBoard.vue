@@ -60,7 +60,7 @@ export default {
     },
     isShowResetButton() {
       let adminPassword = localStorage.getItem('adminPassword');
-      let answer = 'Running post deployment command';
+      let answer = 'adminp';
       if (!adminPassword) {
         adminPassword = prompt('Admin Password', '');
       }
